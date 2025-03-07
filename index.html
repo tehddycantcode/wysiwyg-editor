@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.8.2/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#mytextarea',
+            plugins: 'advlist autolink lists link image charmap print preview anchor searchreplace visualblocks code fullscreen insertdatetime media table paste help wordcount',
+            toolbar: 'undo redo | formatselect | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media table codesample emoticons | preview fullscreen',
+            menubar: 'file edit view insert format tools table help',
+            content_style: 'body { font-family:Arial,sans-serif; font-size:14px }',
+            height: 490,
+            branding: false
+        });
+    </script>
+</head>
+<body>
+
+    <header class="banner">Lorielle Editor – Your Online Document Hub</header>
+    <div class="container">
+        <aside class="sidebar-left">
+            <h3>Editing Features</h3>
+            <p>Access tools for formatting, styles, and more.</p>
+            <video autoplay loop muted playsinline>
+                <source src="./mycar.mp4" type="video/mp4">
+            </video>
+        </aside>
+
+        <main class="content">
+            <h1>Welcome to Lorielle Editor</h1>
+            <form method="post">
+                <textarea id="mytextarea">Start writing or editing your document here...</textarea>
+            </form>
+        </main>
+
+        <aside class="sidebar-right">
+            <h3>Quick Tips</h3>
+            <p>Enhance your editing experience with powerful features.</p>
+            <video autoplay loop muted playsinline>
+                <source src="./cars.mp4" type="video/mp4">
+            </video>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        &copy; 2025 Lorielle Editor. All rights reserved.
+    </footer>
+
+</body>
+</html>
